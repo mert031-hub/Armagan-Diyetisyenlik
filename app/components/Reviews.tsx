@@ -75,12 +75,12 @@ const reviews = [
   },
 ];
 
-const avatarColors = [
-  "bg-sage-200 text-sage-700",
-  "bg-peach-200 text-peach-700",
-  "bg-terracotta-100 text-terracotta-700",
-  "bg-sage-100 text-sage-600",
-  "bg-peach-100 text-peach-600",
+const avatarGradients = [
+  "from-coral-300 to-terracotta-500",
+  "from-coral-200 to-coral-400",
+  "from-terracotta-400 to-terracotta-600",
+  "from-coral-300 to-terracotta-400",
+  "from-coral-400 to-terracotta-500",
 ];
 
 export default function Reviews() {
@@ -92,9 +92,13 @@ export default function Reviews() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="font-poppins font-semibold text-sage-500 uppercase tracking-widest text-xs mb-3">
-            Yorumlar
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <div className="h-px w-8 bg-coral-200" />
+            <p className="font-poppins font-semibold text-terracotta-600 uppercase tracking-widest text-xs">
+              Yorumlar
+            </p>
+            <div className="h-px w-8 bg-coral-200" />
+          </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-warm-charcoal leading-tight mb-4">
             Danışanlarım ne diyor?
           </h2>
@@ -125,7 +129,7 @@ export default function Reviews() {
           {visible.map((review, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 hover:shadow-md transition-shadow duration-300 flex flex-col gap-4"
+              className="bg-white rounded-2xl p-6 shadow-sm border border-warm-charcoal/5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex flex-col gap-4"
             >
               {/* Stars */}
               <div className="flex gap-0.5">
@@ -135,20 +139,23 @@ export default function Reviews() {
                   </svg>
                 ))}
               </div>
-              {/* Review text */}
-              <p className="font-inter text-warm-charcoal/75 text-sm leading-relaxed flex-1">
-                &ldquo;{review.text}&rdquo;
-              </p>
+              {/* Review text with decorative quote */}
+              <div className="relative flex-1">
+                <span className="absolute -top-1 -left-0.5 text-3xl text-coral-200 font-serif leading-none select-none" aria-hidden="true">❝</span>
+                <p className="font-inter text-warm-charcoal/75 text-sm leading-relaxed pt-3 pl-4">
+                  {review.text}
+                </p>
+              </div>
               {/* Reviewer */}
               <div className="flex items-center gap-3 pt-2 border-t border-warm-charcoal/5">
-                <div className={`w-10 h-10 ${avatarColors[i % avatarColors.length]} rounded-full flex items-center justify-center font-poppins font-bold text-xs`}>
+                <div className={`w-10 h-10 bg-gradient-to-br ${avatarGradients[i % avatarGradients.length]} text-white rounded-full flex items-center justify-center font-poppins font-bold text-xs`}>
                   {review.initials}
                 </div>
                 <div>
                   <div className="font-poppins font-semibold text-warm-charcoal text-sm">
                     {review.name}
                   </div>
-                  <div className="font-inter text-warm-charcoal/40 text-xs">
+                  <div className="font-inter text-warm-charcoal/50 text-xs">
                     {review.time}
                   </div>
                 </div>
@@ -170,7 +177,7 @@ export default function Reviews() {
             <button
               type="button"
               onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 bg-white hover:bg-sage-50 text-sage-600 border-2 border-sage-200 font-semibold py-3 px-6 rounded-full transition-all duration-300 font-poppins text-sm min-h-[44px]"
+              className="inline-flex items-center gap-2 bg-white hover:bg-coral-50 text-terracotta-600 border-2 border-coral-200 font-semibold py-3 px-6 rounded-full transition-all duration-300 font-poppins text-sm min-h-[44px]"
             >
               Tüm Yorumları Gör
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

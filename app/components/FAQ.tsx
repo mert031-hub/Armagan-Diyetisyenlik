@@ -48,9 +48,13 @@ export default function FAQ() {
     <section id="sss" className="py-20 md:py-28 bg-warm-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="font-poppins font-semibold text-sage-500 uppercase tracking-widest text-xs mb-3">
-            SSS
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <div className="h-px w-8 bg-coral-200" />
+            <p className="font-poppins font-semibold text-terracotta-600 uppercase tracking-widest text-xs">
+              SSS
+            </p>
+            <div className="h-px w-8 bg-coral-200" />
+          </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-warm-charcoal leading-tight mb-4">
             Merak ettikleriniz
           </h2>
@@ -85,7 +89,7 @@ export default function FAQ() {
                   <div
                     aria-hidden="true"
                     className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                      isOpen ? "bg-sage-500 text-white rotate-45" : "bg-sage-50 text-sage-600"
+                      isOpen ? "bg-terracotta-600 text-white rotate-45" : "bg-coral-100 text-terracotta-600"
                     }`}
                   >
                     <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

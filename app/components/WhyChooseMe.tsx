@@ -64,12 +64,14 @@ export default function WhyChooseMe() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content */}
           <div>
-            <p className="font-poppins font-semibold text-sage-500 uppercase tracking-widest text-xs mb-4">
+            <p className="font-poppins font-semibold text-terracotta-600 uppercase tracking-widest text-xs mb-4">
               Neden Ben?
             </p>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-4xl text-warm-charcoal leading-tight mb-6">
               Fark yaratan bir{" "}
-              <span className="text-sage-500">beslenme deneyimi</span>
+              <span className="bg-gradient-to-r from-coral-500 to-terracotta-600 bg-clip-text text-transparent">
+                beslenme deneyimi
+              </span>
             </h2>
             <p className="font-inter text-warm-charcoal/70 text-base leading-relaxed mb-8">
               Danışanlarım beni &ldquo;bir arkadaş gibi&rdquo; olarak tanımlar. Çünkü bu
@@ -81,9 +83,9 @@ export default function WhyChooseMe() {
               {reasons.map((reason, i) => (
                 <div
                   key={i}
-                  className="flex gap-4 p-4 rounded-xl hover:bg-sage-50 transition-colors duration-200"
+                  className="flex gap-4 p-4 rounded-xl hover:bg-coral-50 transition-colors duration-200"
                 >
-                  <div className="w-11 h-11 bg-sage-100 rounded-xl flex items-center justify-center text-sage-600 flex-shrink-0">
+                  <div className="w-11 h-11 bg-coral-100 rounded-xl flex items-center justify-center text-terracotta-600 flex-shrink-0 transition-transform duration-200 hover:scale-105">
                     {reason.icon}
                   </div>
                   <div>
@@ -134,8 +136,8 @@ export default function WhyChooseMe() {
                 </div>
               </div>
               {/* Floating stat */}
-              <div className="absolute -top-4 -left-4 bg-white rounded-2xl shadow-lg p-4 text-center">
-                <div className="font-poppins font-bold text-2xl text-sage-500">100%</div>
+              <div className="absolute -top-4 -left-4 bg-white rounded-2xl shadow-lg p-4 text-center ring-1 ring-coral-100">
+                <div className="font-poppins font-bold text-2xl text-terracotta-600">100%</div>
                 <div className="font-inter text-warm-charcoal/70 text-xs">Müşteri Memnuniyeti</div>
               </div>
             </div>

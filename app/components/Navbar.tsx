@@ -42,7 +42,7 @@ export default function Navbar() {
             className="flex flex-col leading-tight"
             onClick={handleNavClick}
           >
-            <span className="font-poppins font-bold text-sage-600 text-sm md:text-base">
+            <span className="font-poppins font-bold text-terracotta-600 text-sm md:text-base">
               Dyt. Armağan Gizem
             </span>
             <span className="font-poppins font-light text-warm-charcoal text-xs md:text-sm tracking-wide">
@@ -56,7 +56,7 @@ export default function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="font-inter text-sm text-warm-charcoal hover:text-sage-500 transition-colors duration-200 font-medium"
+                  className="font-inter text-sm text-warm-charcoal hover:text-terracotta-600 transition-colors duration-200 font-medium"
                 >
                   {link.label}
                 </a>
@@ -70,7 +70,7 @@ export default function Navbar() {
               href="https://wa.me/905422722893?text=Merhaba,%20randevu%20almak%20istiyorum."
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-sage-500 hover:bg-sage-600 text-white font-semibold py-2.5 px-5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md font-poppins text-sm"
+              className="bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-2.5 px-5 rounded-full transition-all duration-300 shadow-sm hover:shadow-md font-poppins text-sm"
             >
               Randevu Al
             </a>
@@ -83,7 +83,7 @@ export default function Navbar() {
             aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
             aria-expanded={menuOpen}
             aria-controls="mobile-menu"
-            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-warm-charcoal hover:bg-sage-50 transition-colors"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-warm-charcoal hover:bg-coral-100 transition-colors"
           >
             <span className="w-6 h-5 flex flex-col justify-between" aria-hidden="true">
               <span
@@ -121,7 +121,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={handleNavClick}
-                    className="block py-3 px-4 font-inter text-sm text-warm-charcoal hover:text-sage-500 hover:bg-sage-50 rounded-lg transition-all min-h-[44px] flex items-center"
+                    className="block py-3 px-4 font-inter text-sm text-warm-charcoal hover:text-terracotta-600 hover:bg-coral-50 rounded-lg transition-all min-h-[44px] flex items-center"
                   >
                     {link.label}
                   </a>
@@ -133,7 +133,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleNavClick}
-              className="mt-3 w-full block text-center bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3.5 px-6 rounded-full transition-all font-poppins text-sm min-h-[44px] flex items-center justify-center"
+              className="mt-3 w-full block text-center bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-3.5 px-6 rounded-full transition-all font-poppins text-sm min-h-[44px] flex items-center justify-center"
             >
               Randevu Al
             </a>

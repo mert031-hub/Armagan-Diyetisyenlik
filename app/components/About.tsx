@@ -66,8 +66,8 @@ export default function About() {
                   className="object-cover"
                 />
               </div>
-              {/* Accent badge — right-2 on mobile prevents viewport overflow */}
-              <div className="absolute -top-5 right-2 sm:-right-2 md:-right-8 bg-peach-100 rounded-2xl p-4 shadow-lg">
+              {/* Accent badge */}
+              <div className="absolute -top-5 right-2 sm:-right-2 md:-right-8 bg-coral-100 rounded-2xl p-4 shadow-lg ring-1 ring-coral-200">
                 <div className="font-poppins font-bold text-terracotta-600 text-2xl">5.0</div>
                 <div className="font-inter text-warm-charcoal/70 text-xs">Google Rating</div>
               </div>
@@ -76,12 +76,14 @@ export default function About() {
 
           {/* Content */}
           <div>
-            <p className="font-poppins font-semibold text-sage-500 uppercase tracking-widest text-xs mb-4">
+            <p className="font-poppins font-semibold text-terracotta-600 uppercase tracking-widest text-xs mb-4">
               Hakkımda
             </p>
             <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-4xl text-warm-charcoal leading-tight mb-6">
               Beslenmeyi bir{" "}
-              <span className="text-sage-500">yaşam tarzı</span>
+              <span className="bg-gradient-to-r from-coral-500 to-terracotta-600 bg-clip-text text-transparent">
+                yaşam tarzı
+              </span>
               {" "}haline getiriyorum
             </h2>
             <p className="font-inter text-warm-charcoal/70 text-base leading-relaxed mb-4">
@@ -102,9 +104,9 @@ export default function About() {
               {highlights.map((item, i) => (
                 <div
                   key={i}
-                  className="flex items-center gap-3 bg-sage-50 rounded-xl px-4 py-3"
+                  className="flex items-center gap-3 bg-coral-50 rounded-xl px-4 py-3 border border-coral-100"
                 >
-                  <div className="w-9 h-9 bg-sage-500 rounded-lg flex items-center justify-center text-white flex-shrink-0">
+                  <div className="w-9 h-9 bg-terracotta-600 rounded-lg flex items-center justify-center text-white flex-shrink-0">
                     {item.icon}
                   </div>
                   <span className="font-inter text-warm-charcoal font-medium text-sm">
@@ -119,7 +121,7 @@ export default function About() {
                 href="https://wa.me/905422722893?text=Merhaba,%20bilgi%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3.5 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg font-poppins text-sm min-h-[44px]"
+                className="inline-flex items-center justify-center gap-2 bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-3.5 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg font-poppins text-sm min-h-[44px]"
               >
                 Randevu Al
               </a>
@@ -127,7 +129,7 @@ export default function About() {
                 href="https://www.instagram.com/dytgizemkantar"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-50 text-warm-charcoal border-2 border-sage-200 font-semibold py-3.5 px-6 rounded-full transition-all duration-300 font-poppins text-sm min-h-[44px]"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-coral-50 text-warm-charcoal border-2 border-coral-200 font-semibold py-3.5 px-6 rounded-full transition-all duration-300 font-poppins text-sm min-h-[44px]"
               >
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />

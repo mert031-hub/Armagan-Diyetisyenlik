@@ -10,7 +10,7 @@ const services = [
       </svg>
     ),
     image: "/images/mezuralikadin.jpg",
-    color: "sage",
+    color: "primary",
   },
   {
     title: "Kilo Alma Programı",
@@ -21,7 +21,7 @@ const services = [
       </svg>
     ),
     image: "/images/saglikliyemek.jpg",
-    color: "peach",
+    color: "blush",
   },
   {
     title: "Online Danışmanlık",
@@ -32,7 +32,7 @@ const services = [
       </svg>
     ),
     image: "/images/masa1.jpg",
-    color: "terracotta",
+    color: "accent",
   },
   {
     title: "Yüz Yüze Danışmanlık",
@@ -43,7 +43,7 @@ const services = [
       </svg>
     ),
     image: "/images/diyetphoto.jpg",
-    color: "sage",
+    color: "primary",
   },
   {
     title: "Gebelikte Beslenme",
@@ -54,7 +54,7 @@ const services = [
       </svg>
     ),
     image: "/images/healthymeal.jpg",
-    color: "peach",
+    color: "blush",
   },
   {
     title: "Emzirme Dönemi",
@@ -65,7 +65,7 @@ const services = [
       </svg>
     ),
     image: "/images/healthymeal2.jpg",
-    color: "terracotta",
+    color: "accent",
   },
   {
     title: "Sağlıklı Yaşam",
@@ -76,7 +76,7 @@ const services = [
       </svg>
     ),
     image: "/images/spor.jpg",
-    color: "sage",
+    color: "primary",
   },
   {
     title: "Kişiye Özel Program",
@@ -87,23 +87,20 @@ const services = [
       </svg>
     ),
     image: "/images/tabak.jpg",
-    color: "peach",
+    color: "blush",
   },
 ];
 
-const colorMap: Record<string, { bg: string; iconBg: string; iconText: string }> = {
-  sage: {
-    bg: "bg-sage-50",
-    iconBg: "bg-sage-500",
+const colorMap: Record<string, { iconBg: string; iconText: string }> = {
+  primary: {
+    iconBg: "bg-terracotta-600",
     iconText: "text-white",
   },
-  peach: {
-    bg: "bg-peach-50",
-    iconBg: "bg-peach-400",
+  blush: {
+    iconBg: "bg-coral-400",
     iconText: "text-white",
   },
-  terracotta: {
-    bg: "bg-terracotta-50",
+  accent: {
     iconBg: "bg-terracotta-500",
     iconText: "text-white",
   },
@@ -114,14 +111,20 @@ export default function Services() {
     <section id="hizmetler" className="py-20 md:py-28 bg-warm-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-14">
-          <p className="font-poppins font-semibold text-sage-500 uppercase tracking-widest text-xs mb-3">
-            Hizmetler
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-3">
+            <div className="h-px w-8 bg-coral-200" />
+            <p className="font-poppins font-semibold text-terracotta-600 uppercase tracking-widest text-xs">
+              Hizmetler
+            </p>
+            <div className="h-px w-8 bg-coral-200" />
+          </div>
           <h2 className="font-poppins font-bold text-3xl md:text-4xl lg:text-5xl text-warm-charcoal leading-tight mb-4">
             Size özel{" "}
-            <span className="text-sage-500">beslenme çözümleri</span>
+            <span className="bg-gradient-to-r from-coral-500 to-terracotta-600 bg-clip-text text-transparent">
+              beslenme çözümleri
+            </span>
           </h2>
-          <p className="font-inter text-warm-charcoal/60 text-base max-w-xl mx-auto">
+          <p className="font-inter text-warm-charcoal/70 text-base max-w-xl mx-auto">
             Her bireyin ihtiyacı farklıdır. Hedeflerinize ve yaşam tarzınıza uygun
             kişiselleştirilmiş programlarla yanınızdayım.
           </p>
@@ -133,7 +136,7 @@ export default function Services() {
             return (
               <div
                 key={i}
-                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-warm-charcoal/5"
+                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border border-warm-charcoal/5 hover:ring-2 hover:ring-coral-200 hover:ring-offset-1"
               >
                 {/* Image */}
                 <div className="relative h-40 overflow-hidden">
@@ -168,7 +171,7 @@ export default function Services() {
             href="https://wa.me/905422722893?text=Merhaba,%20hizmetler%20hakkında%20bilgi%20almak%20istiyorum."
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg font-poppins text-sm"
+            className="inline-flex items-center gap-2 bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-3.5 px-8 rounded-full transition-all duration-300 shadow-md hover:shadow-lg font-poppins text-sm"
           >
             Ücretsiz Bilgi Al
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

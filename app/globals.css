@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #FDFAF7;
-  --foreground: #3D3832;
+  --background: #FFF9F6;
+  --foreground: #3B3B3B;
   --navbar-height: 4rem;
 }
 
@@ -21,7 +21,7 @@
   left: 1rem;
   z-index: 9999;
   padding: 0.5rem 1rem;
-  background: #5e875e;
+  background: #A85849;
   color: #fff;
   font-family: var(--font-poppins), sans-serif;
   font-size: 0.875rem;
@@ -56,14 +56,14 @@ body {
 
 /* ─── Focus Rings ────────────────────────────────────────── */
 :focus-visible {
-  outline: 3px solid #5e875e;
+  outline: 3px solid #A85849;
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 a:focus-visible,
 button:focus-visible {
-  outline: 3px solid #5e875e;
+  outline: 3px solid #A85849;
   outline-offset: 3px;
   border-radius: 6px;
 }
@@ -71,7 +71,7 @@ button:focus-visible {
 /* ─── Components ─────────────────────────────────────────── */
 @layer components {
   .btn-primary {
-    @apply bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5;
+    @apply bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-3 px-6 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5;
   }
 
   .btn-whatsapp {

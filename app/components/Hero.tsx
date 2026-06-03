@@ -5,23 +5,25 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center overflow-hidden bg-warm-white">
       {/* Background decoration */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 md:w-[600px] md:h-[600px] bg-sage-100 rounded-full opacity-40" />
-        <div className="absolute -bottom-20 -left-20 w-60 h-60 md:w-96 md:h-96 bg-peach-100 rounded-full opacity-40" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-sage-50 rounded-full opacity-30" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 md:w-[600px] md:h-[600px] bg-coral-200 rounded-full opacity-30" />
+        <div className="absolute -bottom-20 -left-20 w-60 h-60 md:w-96 md:h-96 bg-coral-100 rounded-full opacity-40" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-coral-50 rounded-full opacity-30" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full pt-20 pb-16">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left order-2 lg:order-1">
-            <div className="inline-flex items-center gap-2 bg-sage-100 text-sage-700 text-xs font-semibold px-4 py-2 rounded-full mb-6 font-poppins tracking-wide uppercase">
-              <span className="w-2 h-2 bg-sage-500 rounded-full animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-coral-100 text-terracotta-700 text-xs font-semibold px-4 py-2 rounded-full mb-6 font-poppins tracking-wide uppercase">
+              <span className="w-2 h-2 bg-terracotta-600 rounded-full animate-pulse" />
               Online & Yüz Yüze Danışmanlık
             </div>
 
             <h1 className="font-poppins font-bold text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl text-warm-charcoal leading-tight mb-4">
               Sağlıklı yaşamı{" "}
-              <span className="text-sage-500">sürdürülebilir</span>{" "}
+              <span className="bg-gradient-to-r from-coral-500 to-terracotta-600 bg-clip-text text-transparent">
+                sürdürülebilir
+              </span>{" "}
               hale getirin.
             </h1>
 
@@ -36,7 +38,7 @@ export default function Hero() {
                 href="https://wa.me/905422722893?text=Merhaba,%20randevu%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 font-poppins text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-terracotta-600 hover:bg-terracotta-700 text-white font-semibold py-3.5 px-7 rounded-full transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5 font-poppins text-sm"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -46,7 +48,7 @@ export default function Hero() {
               </a>
               <a
                 href="tel:05422722893"
-                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-sage-50 text-sage-600 border-2 border-sage-300 font-semibold py-3.5 px-7 rounded-full transition-all duration-300 font-poppins text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-white hover:bg-coral-50 text-terracotta-700 border-2 border-coral-200 font-semibold py-3.5 px-7 rounded-full transition-all duration-300 font-poppins text-sm"
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 7V5z" />
@@ -70,14 +72,14 @@ export default function Hero() {
               </div>
               <div className="w-px h-6 bg-warm-charcoal/20" />
               <div className="flex items-center gap-1.5">
-                <svg className="w-4 h-4 text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <span className="font-inter text-warm-charcoal/70 text-xs">Uzman Diyetisyen</span>
               </div>
               <div className="w-px h-6 bg-warm-charcoal/20" />
               <div className="flex items-center gap-1.5">
-                <svg className="w-4 h-4 text-sage-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
                 </svg>
                 <span className="font-inter text-warm-charcoal/70 text-xs">Online & Yüz Yüze</span>
@@ -89,8 +91,8 @@ export default function Hero() {
           <div className="relative order-1 lg:order-2 flex justify-center">
             <div className="relative w-72 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[480px] lg:w-[420px] lg:h-[520px]">
               {/* Decorative background shape */}
-              <div className="absolute inset-0 bg-gradient-to-br from-sage-200 to-peach-200 rounded-[2rem] rotate-3" />
-              <div className="absolute inset-0 bg-gradient-to-tl from-sage-100 to-peach-100 rounded-[2rem] -rotate-1" />
+              <div className="absolute inset-0 bg-gradient-to-br from-coral-200 to-coral-300 rounded-[2rem] rotate-3" />
+              <div className="absolute inset-0 bg-gradient-to-tl from-coral-50 to-coral-200 rounded-[2rem] -rotate-1" />
               {/* Main image */}
               <div className="relative z-10 w-full h-full rounded-[2rem] overflow-hidden shadow-2xl">
                 <Image
@@ -102,10 +104,10 @@ export default function Hero() {
                   priority
                 />
               </div>
-              {/* Floating badge top */}
-              <div className="absolute -top-4 -left-4 z-20 bg-white rounded-2xl shadow-lg p-3 flex items-center gap-2">
-                <div className="w-9 h-9 bg-sage-100 rounded-xl flex items-center justify-center">
-                  <svg className="w-5 h-5 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              {/* Floating badge top — glass morphism */}
+              <div className="absolute -top-4 -left-4 z-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-3 flex items-center gap-2 ring-1 ring-coral-100">
+                <div className="w-9 h-9 bg-coral-100 rounded-xl flex items-center justify-center">
+                  <svg className="w-5 h-5 text-terracotta-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                   </svg>
                 </div>
@@ -114,8 +116,8 @@ export default function Hero() {
                   <div className="font-inter text-warm-charcoal/70 text-xs">Mutlu Danışan</div>
                 </div>
               </div>
-              {/* Floating badge bottom */}
-              <div className="absolute -bottom-4 -right-4 z-20 bg-white rounded-2xl shadow-lg p-3">
+              {/* Floating badge bottom — glass morphism */}
+              <div className="absolute -bottom-4 -right-4 z-20 bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl p-3 ring-1 ring-coral-100">
                 <div className="flex items-center gap-2 mb-1">
                   {[1, 2, 3, 4, 5].map((s) => (
                     <svg key={s} className="w-3 h-3 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
