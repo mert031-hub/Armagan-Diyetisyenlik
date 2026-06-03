@@ -90,7 +90,7 @@ export default function WhyChooseMe() {
                     <h3 className="font-poppins font-semibold text-warm-charcoal text-sm mb-1">
                       {reason.title}
                     </h3>
-                    <p className="font-inter text-warm-charcoal/60 text-xs leading-relaxed">
+                    <p className="font-inter text-warm-charcoal/70 text-xs leading-relaxed">
                       {reason.desc}
                     </p>
                   </div>
@@ -136,7 +136,7 @@ export default function WhyChooseMe() {
               {/* Floating stat */}
               <div className="absolute -top-4 -left-4 bg-white rounded-2xl shadow-lg p-4 text-center">
                 <div className="font-poppins font-bold text-2xl text-sage-500">100%</div>
-                <div className="font-inter text-warm-charcoal/60 text-xs">Müşteri Memnuniyeti</div>
+                <div className="font-inter text-warm-charcoal/70 text-xs">Müşteri Memnuniyeti</div>
               </div>
             </div>
           </div>

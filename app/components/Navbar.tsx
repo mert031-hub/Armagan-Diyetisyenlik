@@ -17,7 +17,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -31,7 +31,10 @@ export default function Navbar() {
           : "bg-transparent"
       }`}
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <nav
+        aria-label="Ana navigasyon"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a
@@ -48,7 +51,7 @@ export default function Navbar() {
           </a>
 
           {/* Desktop Nav */}
-          <ul className="hidden lg:flex items-center gap-6">
+          <ul className="hidden lg:flex items-center gap-6" role="list">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
@@ -61,7 +64,7 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* CTA Button */}
+          {/* Desktop CTA */}
           <div className="hidden lg:block">
             <a
               href="https://wa.me/905422722893?text=Merhaba,%20randevu%20almak%20istiyorum."
@@ -73,46 +76,52 @@ export default function Navbar() {
             </a>
           </div>
 
-          {/* Hamburger */}
+          {/* Hamburger — min 44×44px touch target */}
           <button
+            type="button"
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden p-2 rounded-lg text-warm-charcoal hover:bg-sage-50 transition-colors"
-            aria-label="Menüyü aç"
+            aria-label={menuOpen ? "Menüyü kapat" : "Menüyü aç"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
+            className="lg:hidden min-w-[44px] min-h-[44px] flex items-center justify-center rounded-lg text-warm-charcoal hover:bg-sage-50 transition-colors"
           >
-            <div className="w-6 h-5 flex flex-col justify-between">
+            <span className="w-6 h-5 flex flex-col justify-between" aria-hidden="true">
               <span
-                className={`block h-0.5 bg-warm-charcoal transition-all duration-300 ${
-                  menuOpen ? "rotate-45 translate-y-2" : ""
+                className={`block h-0.5 bg-warm-charcoal transition-all duration-300 origin-center ${
+                  menuOpen ? "rotate-45 translate-y-[9px]" : ""
                 }`}
               />
               <span
                 className={`block h-0.5 bg-warm-charcoal transition-all duration-300 ${
-                  menuOpen ? "opacity-0" : ""
+                  menuOpen ? "opacity-0 scale-x-0" : ""
                 }`}
               />
               <span
-                className={`block h-0.5 bg-warm-charcoal transition-all duration-300 ${
-                  menuOpen ? "-rotate-45 -translate-y-2" : ""
+                className={`block h-0.5 bg-warm-charcoal transition-all duration-300 origin-center ${
+                  menuOpen ? "-rotate-45 -translate-y-[9px]" : ""
                 }`}
               />
-            </div>
+            </span>
           </button>
         </div>
 
         {/* Mobile Menu */}
         <div
+          id="mobile-menu"
+          role="navigation"
+          aria-label="Mobil navigasyon"
           className={`lg:hidden transition-all duration-300 overflow-hidden ${
-            menuOpen ? "max-h-96 pb-6" : "max-h-0"
+            menuOpen ? "max-h-[28rem] pb-6" : "max-h-0"
           }`}
         >
           <div className="bg-white rounded-2xl shadow-lg p-4 mt-2">
-            <ul className="flex flex-col gap-1">
+            <ul className="flex flex-col gap-1" role="list">
               {navLinks.map((link) => (
                 <li key={link.href}>
                   <a
                     href={link.href}
                     onClick={handleNavClick}
-                    className="block py-3 px-4 font-inter text-sm text-warm-charcoal hover:text-sage-500 hover:bg-sage-50 rounded-lg transition-all"
+                    className="block py-3 px-4 font-inter text-sm text-warm-charcoal hover:text-sage-500 hover:bg-sage-50 rounded-lg transition-all min-h-[44px] flex items-center"
                   >
                     {link.label}
                   </a>
@@ -124,7 +133,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={handleNavClick}
-              className="mt-3 w-full block text-center bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3 px-6 rounded-full transition-all font-poppins text-sm"
+              className="mt-3 w-full block text-center bg-sage-500 hover:bg-sage-600 text-white font-semibold py-3.5 px-6 rounded-full transition-all font-poppins text-sm min-h-[44px] flex items-center justify-center"
             >
               Randevu Al
             </a>

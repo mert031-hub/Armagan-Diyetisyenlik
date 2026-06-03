@@ -78,7 +78,7 @@ export default function HowItWorks() {
             Nasıl{" "}
             <span className="text-sage-500">çalışıyoruz?</span>
           </h2>
-          <p className="font-inter text-warm-charcoal/60 text-base max-w-lg mx-auto">
+          <p className="font-inter text-warm-charcoal/70 text-base max-w-lg mx-auto">
             5 adımda sağlıklı yaşama giden yolculuğunuza başlayın.
             Her adım basit, açık ve destekleyicidir.
           </p>
@@ -102,7 +102,7 @@ export default function HowItWorks() {
                 <h3 className="font-poppins font-bold text-warm-charcoal text-base mb-2">
                   {step.title}
                 </h3>
-                <p className="font-inter text-warm-charcoal/60 text-sm leading-relaxed">
+                <p className="font-inter text-warm-charcoal/70 text-sm leading-relaxed">
                   {step.desc}
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function HowItWorks() {
               <div className="font-poppins font-bold text-warm-charcoal text-lg">
                 Başlamaya hazır mısınız?
               </div>
-              <div className="font-inter text-warm-charcoal/60 text-sm">
+              <div className="font-inter text-warm-charcoal/70 text-sm">
                 İlk görüşme tamamen ücretsiz ve bağlayıcı değil.
               </div>
             </div>

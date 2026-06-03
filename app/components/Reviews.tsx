@@ -109,13 +109,13 @@ export default function Reviews() {
                   </svg>
                 ))}
               </div>
-              <div className="font-inter text-warm-charcoal/50 text-xs mt-1">Google</div>
+              <div className="font-inter text-warm-charcoal/60 text-xs mt-1">Google</div>
             </div>
             <div className="w-px h-12 bg-warm-charcoal/10" />
             <div className="text-left">
               <div className="font-poppins font-bold text-warm-charcoal text-sm">Mükemmel</div>
-              <div className="font-inter text-warm-charcoal/60 text-xs">10+ Değerlendirme</div>
-              <div className="font-inter text-warm-charcoal/60 text-xs">Doğrulanmış Yorumlar</div>
+              <div className="font-inter text-warm-charcoal/70 text-xs">10+ Değerlendirme</div>
+              <div className="font-inter text-warm-charcoal/70 text-xs">Doğrulanmış Yorumlar</div>
             </div>
           </div>
         </div>
@@ -168,8 +168,9 @@ export default function Reviews() {
         {!showAll && reviews.length > 6 && (
           <div className="text-center">
             <button
+              type="button"
               onClick={() => setShowAll(true)}
-              className="inline-flex items-center gap-2 bg-white hover:bg-sage-50 text-sage-600 border-2 border-sage-200 font-semibold py-3 px-6 rounded-full transition-all duration-300 font-poppins text-sm"
+              className="inline-flex items-center gap-2 bg-white hover:bg-sage-50 text-sage-600 border-2 border-sage-200 font-semibold py-3 px-6 rounded-full transition-all duration-300 font-poppins text-sm min-h-[44px]"
             >
               Tüm Yorumları Gör
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

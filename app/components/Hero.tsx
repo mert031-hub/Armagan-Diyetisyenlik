@@ -66,7 +66,7 @@ export default function Hero() {
                   ))}
                 </div>
                 <span className="font-poppins font-bold text-warm-charcoal text-sm">5.0</span>
-                <span className="font-inter text-warm-charcoal/60 text-xs">Google</span>
+                <span className="font-inter text-warm-charcoal/70 text-xs">Google</span>
               </div>
               <div className="w-px h-6 bg-warm-charcoal/20" />
               <div className="flex items-center gap-1.5">
@@ -111,7 +111,7 @@ export default function Hero() {
                 </div>
                 <div>
                   <div className="font-poppins font-bold text-warm-charcoal text-sm">100+</div>
-                  <div className="font-inter text-warm-charcoal/60 text-xs">Mutlu Danışan</div>
+                  <div className="font-inter text-warm-charcoal/70 text-xs">Mutlu Danışan</div>
                 </div>
               </div>
               {/* Floating badge bottom */}

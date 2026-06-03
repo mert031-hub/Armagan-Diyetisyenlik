@@ -91,24 +91,21 @@ const services = [
   },
 ];
 
-const colorMap: Record<string, { bg: string; iconBg: string; iconText: string; badge: string }> = {
+const colorMap: Record<string, { bg: string; iconBg: string; iconText: string }> = {
   sage: {
     bg: "bg-sage-50",
     iconBg: "bg-sage-500",
     iconText: "text-white",
-    badge: "bg-sage-100 text-sage-700",
   },
   peach: {
     bg: "bg-peach-50",
     iconBg: "bg-peach-400",
     iconText: "text-white",
-    badge: "bg-peach-100 text-peach-700",
   },
   terracotta: {
     bg: "bg-terracotta-50",
     iconBg: "bg-terracotta-500",
     iconText: "text-white",
-    badge: "bg-terracotta-100 text-terracotta-700",
   },
 };
 
@@ -157,7 +154,7 @@ export default function Services() {
                   <h3 className="font-poppins font-bold text-warm-charcoal text-base mb-2">
                     {service.title}
                   </h3>
-                  <p className="font-inter text-warm-charcoal/60 text-sm leading-relaxed">
+                  <p className="font-inter text-warm-charcoal/70 text-sm leading-relaxed">
                     {service.desc}
                   </p>
                 </div>
